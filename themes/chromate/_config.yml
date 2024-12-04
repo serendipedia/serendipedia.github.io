@@ -38,7 +38,7 @@ podcast: true
 # Enable Lazyload support or not
 # ------------------------------------------------------------
 # 是否启用图片懒加载
-lazyload: true
+lazyload: false
 
 # Your Copyright String will be shown in footer
 # ------------------------------------------------------------
@@ -70,10 +70,11 @@ highlight:
 #   ['链接地址', '图标类', '图标之后的文字']
 
 navbar:
-  - ['/feed.rss', 'fa fa-rss', '']
-  - ['https://www.instagram.com/covencoffeehour/', 'fa fa-instagram', '']
-  - ['https://www.xiaohongshu.com/user/profile/64e40fef000000000100d998', "fa fa-book", '']
-  - ['mailto:covencoffeehour@gmail.com', 'fa fa-envelope', '']
+  - ['/feed.rss', 'fa-solid fa-rss', '']
+  - ['https://www.instagram.com/covencoffeehour/', 'fa-brands fa-instagram', '']
+  - ['https://www.xiaohongshu.com/user/profile/64e40fef000000000100d998', "fa-solid fa-book", '']
+  - ['https://alive.bar/@serendipedia', "fa-brands fa-mastodon", '' ]
+  - ['mailto:serendipedia2024@gmail.com', 'fa-solid fa-envelope', '']
 
 # Subnav configuration will show below navbar with a horizontal divider
 # Configuration format as same as previous
@@ -81,10 +82,10 @@ navbar:
 # Sub Navbar 将会在 Navbar 下方展示并以水平线与之分割
 # 配置模式与上面类似
 subnav:
-  - ['https://podcasts.apple.com/us/podcast/', 'fa fa-podcast', 'Apple Podcast']
-  - ['https://open.spotify.com/show/5PTSZVqJLNWShHWcBCFJye', 'fa fa-spotify', 'Spotify']
-  - ['https://www.youtube.com/@covencoffeehour', 'fa fa-youtube', 'Youtube']
-  - ['https://www.xiaoyuzhoufm.com/podcast/64e178bb4f13378ff6807a86', 'fa fa-globe', '小宇宙']
+  - ['https://podcasts.apple.com/us/podcast/', 'fa-solid fa-podcast', 'Apple Podcast']
+  - ['https://open.spotify.com/show/5PTSZVqJLNWShHWcBCFJye', 'fa-brands fa-spotify', 'Spotify']
+  - ['https://www.youtube.com/@covencoffeehour', 'fa-brands fa-youtube', 'Youtube']
+  - ['https://www.xiaoyuzhoufm.com/podcast/64e178bb4f13378ff6807a86', 'fa-solid fa-globe', '小宇宙']
 
 # Menubar and its texts
 # ------------------------------------------------------------

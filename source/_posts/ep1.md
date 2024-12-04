@@ -1,6 +1,6 @@
 ---
 title: Ep. 1 人生重大课题之一：下顿吃什么！
-thumbnail: https://ooo.0x0.ooo/2023/11/11/OeNKqY.jpg
+thumbnail: https://ooo.0x0.ooo/2024/12/05/OLhYJs.png
 date: 2023-08-20 13:51:23
 tags: ["主题聊天","日常"]
 podcast:
