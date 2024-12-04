@@ -15,7 +15,7 @@
             <div class="card entry">
                 <!-- Post thumbnail with lazayload support -->
                 <% if (post.thumbnail) { %>
-                    <div class="card-iamge">
+                    <div class="card-image">
                         <figure class="image is-16by9">
                             <% if (post.thumbnail) { %> 
                                 <% if (theme.lazyload === true) { %>
@@ -110,7 +110,7 @@
                 </div>
 
                 <div class="card-footer">
-                    <a href="<%- url_for(post.path) %>" class="card-footer-item has-text-danger has-text-weight-medium is-uppercase">
+                    <a href="<%- url_for(post.path) %>" class="card-footer-item has-text-weight-medium is-uppercase" style="color: #F68B30;">
                         <% if (post.podcast && theme.podcast) { %>
                             <%- __("listen") %>
                         <% } else { %> 

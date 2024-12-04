@@ -29,7 +29,7 @@ favicon: https://ooo.0x0.ooo/2024/12/05/OLhYJs.png
 # Datetime format for most of positions
 # ------------------------------------------------------------
 # 站点内大部分日期的显示格式
-timeformat: "MMM, D YYYY"
+timeformat: "MMM D, YYYY"
 
 # Enable Podcast support or not
 # 是否启用 Podcast 支持
@@ -85,6 +85,7 @@ subnav:
   - ['https://podcasts.apple.com/us/podcast/', 'fa-solid fa-podcast', 'Apple Podcast']
   - ['https://open.spotify.com/show/5PTSZVqJLNWShHWcBCFJye', 'fa-brands fa-spotify', 'Spotify']
   - ['https://www.youtube.com/@covencoffeehour', 'fa-brands fa-youtube', 'Youtube']
+  - [ 'https://www.xiaoyuzhoufm.com/podcast/64e178bb4f13378ff6807a86', 'fa-solid fa-headphone', 'Pocket Casts' ]
   - ['https://www.xiaoyuzhoufm.com/podcast/64e178bb4f13378ff6807a86', 'fa-solid fa-globe', '小宇宙']
 
 # Menubar and its texts
