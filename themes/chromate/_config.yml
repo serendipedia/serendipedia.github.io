@@ -82,10 +82,10 @@ navbar:
 # Sub Navbar 将会在 Navbar 下方展示并以水平线与之分割
 # 配置模式与上面类似
 subnav:
+  - ['https://www.xiaoyuzhoufm.com/podcast/64e178bb4f13378ff6807a86', 'fa-solid fa-headphones', 'Pocket Casts' ]
   - ['https://podcasts.apple.com/us/podcast/', 'fa-solid fa-podcast', 'Apple Podcast']
   - ['https://open.spotify.com/show/5PTSZVqJLNWShHWcBCFJye', 'fa-brands fa-spotify', 'Spotify']
   - ['https://www.youtube.com/@covencoffeehour', 'fa-brands fa-youtube', 'Youtube']
-  - [ 'https://www.xiaoyuzhoufm.com/podcast/64e178bb4f13378ff6807a86', 'fa-solid fa-headphone', 'Pocket Casts' ]
   - ['https://www.xiaoyuzhoufm.com/podcast/64e178bb4f13378ff6807a86', 'fa-solid fa-globe', '小宇宙']
 
 # Menubar and its texts
