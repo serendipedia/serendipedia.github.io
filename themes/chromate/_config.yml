@@ -92,6 +92,7 @@ subnav:
 # ------------------------------------------------------------
 # 菜单栏的地址和文字
 menubar:
+  - [ '/others/about.html', 'About' ]
   - ['/archives/', 'Archives']
 
 # RSS auto generation configuration

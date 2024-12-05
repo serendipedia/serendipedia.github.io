@@ -7,8 +7,8 @@ excerpt: 欢迎收听《Serendipedia | 维机游走》的第一期节目！恰�
 podcast:
   subtitle: Ep. 1 波士顿官方圣诞树的故事  # 你本期 EP 的子标题
   authors: ["Serendipedia｜维机游走"]
-  hosts: ["albus：日常不务正业搞七搞八的无用知识爱好者", 
-          "rholais：天马行空笑点清奇的维基兔子洞熟客"]  # 本期作者
+  hosts: ["阿不思：日常不务正业搞七搞八的无用知识爱好者", 
+          "路比：天马行空笑点清奇的维基兔子洞熟客"]  # 本期作者
   cover: https://ooo.0x0.ooo/2024/12/05/OLhYJs.png  # 网页端播放器上的图片
   duration: 5780  # 时间长度
   media:
