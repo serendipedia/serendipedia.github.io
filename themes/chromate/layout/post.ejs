@@ -11,17 +11,17 @@
                     });
                 </script>
             <% } %>
-            <% if (page.thumbnail) { %>
-                <div class="card-image">
-                    <figure class="image is-16by9">
-                        <% if (theme.lazyload === true) { %>
-                            <img class="lazy" data-src="<%= page.thumbnail %>" />
-                        <% } else { %>
-                            <img src="<%= page.thumbnail %>" />
-                        <% } %>
-                    </figure>
-                </div>
-            <% } %>
+<!--             <% if (page.thumbnail) { %> -->
+<!--                 <div class="card-image"> -->
+<!--                     <figure class="image is-16by9"> -->
+<!--                         <% if (theme.lazyload === true) { %> -->
+<!--                             <img class="lazy" data-src="<%= page.thumbnail %>" /> -->
+<!--                         <% } else { %> -->
+<!--                             <img src="<%= page.thumbnail %>" /> -->
+<!--                         <% } %> -->
+<!--                     </figure> -->
+<!--                 </div> -->
+<!--             <% } %> -->
             <div class="card-content post-card">
                 <h2 class="title has-text-centered">
                     <%= page.title %>

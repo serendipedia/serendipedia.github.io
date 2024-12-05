@@ -9,14 +9,15 @@
         </div>
     </div>
 <% } %>
+
 <% page.posts.each(function (post) { %>
-    <div class="columns">
+<!--     <div class="columns"> -->
         <div class="column is-8 is-offset-2">
-            <div class="card entry">
+            <div class="card entry is-horizontal">
                 <!-- Post thumbnail with lazayload support -->
                 <% if (post.thumbnail) { %>
                     <div class="card-image">
-                        <figure class="image is-16by9">
+                        <figure class="image is-48x48">
                             <% if (post.thumbnail) { %> 
                                 <% if (theme.lazyload === true) { %>
                                     <img class="lazy" data-src="<%= post.thumbnail %>" />
@@ -29,7 +30,6 @@
                 <% } %>
 
                 <div class="card-content">
-                    
                     <!-- Post title -->
                     <p class="title is-4">
                         <%= post.title %>
@@ -52,8 +52,8 @@
                                                     const second = Math.floor(duration % 60);
                                                     const viewstr = hour + ':' + String(minute).padStart(2, '0') + ':' + String(second).padStart(2, '0');
                                                 %>
-                                                <span class="tag is-danger">
-                                                    <i class="fa fa-microphone"></i>
+                                                <span class="tag" style="background-color: #F68B30;">
+                                                    <i class="fa-solid fa-microphone" style="color: #ffffff;"></i>
                                                 </span>
                                                 <span class="tag">
                                                     <%- viewstr %>
@@ -62,8 +62,8 @@
                                         </div>
                                         <div class="control">
                                             <div class="tags has-addons">
-                                                <span class="tag is-link">
-                                                    <i class="fa fa-calendar"></i>
+                                                <span class="tag" style="background-color: #F68B30;">
+                                                    <i class="fa-solid fa-calendar" style="color: #ffffff;"></i>
                                                 </span>
                                                 <span class="tag">
                                                     <%- date(post.date, theme.timeformat) %>
@@ -107,21 +107,24 @@
                             <p><%- post.content %></p>
                         <% } %>
                     </section>
+
+<!--                     listen now button -->
+                    <footer class="card-footer is-forced-bottom">
+                        <a href="<%- url_for(post.path) %>" class="card-footer-item has-text-weight-medium is-uppercase" style="color: #F68B30;">
+                            <% if (post.podcast && theme.podcast) { %>
+                                <%- __("listen") %>
+                            <% } else { %>
+                                <%- __("read") %>
+                            <% } %>
+                        </a>
+                    </footer>
                 </div>
 
-                <div class="card-footer">
-                    <a href="<%- url_for(post.path) %>" class="card-footer-item has-text-weight-medium is-uppercase" style="color: #F68B30;">
-                        <% if (post.podcast && theme.podcast) { %>
-                            <%- __("listen") %>
-                        <% } else { %> 
-                            <%- __("read") %>
-                        <% } %> 
-                    </a>
-                </div>
+
 
             </div>
         </div>
-    </div>
+<!--     </div> -->
 <% }); %>
 
 <!-- Page navigation -->
