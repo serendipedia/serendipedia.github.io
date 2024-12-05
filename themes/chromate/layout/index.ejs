@@ -12,119 +12,97 @@
 
 <% page.posts.each(function (post) { %>
 <!--     <div class="columns"> -->
-        <div class="column is-8 is-offset-2">
-            <div class="card entry is-horizontal">
-                <!-- Post thumbnail with lazayload support -->
-                <% if (post.thumbnail) { %>
-                    <div class="card-image">
-                        <figure class="image is-48x48">
-                            <% if (post.thumbnail) { %> 
-                                <% if (theme.lazyload === true) { %>
-                                    <img class="lazy" data-src="<%= post.thumbnail %>" />
-                                <% } else { %>
-                                    <img src="<%= post.thumbnail %>" />
-                                <% } %>
-                            <% } %>
-                        </figure>
-                    </div>
-                <% } %>
-
+<!--         <div class="column"> -->
+            <div class="card">
                 <div class="card-content">
-                    <!-- Post title -->
-                    <p class="title is-4">
-                        <%= post.title %>
-                    </p>
-
-                    <!-- Post meta info -->
-                    <div class="level">
-                        <div class="level-left">
-                            <div class="level-item">
-
-                                <!-- Podcast duration with post date -->
-                                <% if (post.podcast && theme.podcast) { %>
-                                    <div class="field is-grouped is-grouped-multiline">
-                                        <div class="control">
-                                            <div class="tags has-addons">
-                                                <%
-                                                    const duration = post.podcast.duration;
-                                                    const hour = Math.floor(duration / 3600);
-                                                    const minute = Math.floor((duration / 60) % 60);
-                                                    const second = Math.floor(duration % 60);
-                                                    const viewstr = hour + ':' + String(minute).padStart(2, '0') + ':' + String(second).padStart(2, '0');
-                                                %>
-                                                <span class="tag" style="background-color: #F68B30;">
-                                                    <i class="fa-solid fa-microphone" style="color: #ffffff;"></i>
-                                                </span>
-                                                <span class="tag">
-                                                    <%- viewstr %>
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div class="control">
-                                            <div class="tags has-addons">
-                                                <span class="tag" style="background-color: #F68B30;">
-                                                    <i class="fa-solid fa-calendar" style="color: #ffffff;"></i>
-                                                </span>
-                                                <span class="tag">
-                                                    <%- date(post.date, theme.timeformat) %>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                <% } else { %>
-                                    <div class="tags has-addons">
-                                        <span class="tag is-link">
-                                            <i class="fa fa-calendar"></i>
-                                        </span>
-                                        <span class="tag">
-                                            <%- date(post.date, theme.timeformat) %>
-                                        </span>
-                                    </div>
-                                <% } %> 
-                            </div>
-                            
-                            <!-- Post tags -->
-                            <div class="level-item">
-                                <% if (post.tags) { %>
-                                    <div class="tags">
-                                        <% (post.tags).forEach(function(item) { %>
-                                            <span class="tag">
-                                                # <%= item.name %>
-                                            </span>
-                                        <% }); %>
+                    <div class="content">
+                        <div class="columns">
+                            <div class="column is-one-quarter">
+                                <% if (post.thumbnail) { %>
+                                    <div class="card-image">
+                                        <figure class="image is-square">
+                                            <% if (post.thumbnail) { %>
+                                                <% if (theme.lazyload === true) { %>
+                                                    <img class="lazy" data-src="<%= post.thumbnail %>" />
+                                                <% } else { %>
+                                                    <img src="<%= post.thumbnail %>" />
+                                                <% } %>
+                                            <% } %>
+                                        </figure>
                                     </div>
                                 <% } %>
                             </div>
-
-                        </div>
-                    </div>
-
-                    <!-- Post content or excerpt -->
-                    <section class="content has-text-weight-light is-size-6">
-                        <% if (post.excerpt) { %>
-                            <p><%- post.excerpt %></p>
-                        <% } else { %>
-                            <p><%- post.content %></p>
-                        <% } %>
-                    </section>
-
-<!--                     listen now button -->
-                    <footer class="card-footer is-forced-bottom">
-                        <a href="<%- url_for(post.path) %>" class="card-footer-item has-text-weight-medium is-uppercase" style="color: #F68B30;">
-                            <% if (post.podcast && theme.podcast) { %>
-                                <%- __("listen") %>
+                        <div class="column">
+                            <p class="title is-4"><%= post.title %></p>
+                            <div class = "level">
+                                <div class="level-left">
+                                    <div class="level-item">
+                                        <!-- Podcast duration with post date -->
+                                            <% if (post.podcast && theme.podcast) { %>
+                                                <div class="field is-grouped is-grouped-multiline">
+                                                    <div class="control">
+                                                        <div class="tags has-addons">
+                                                            <%
+                                                                const duration = post.podcast.duration;
+                                                                const hour = Math.floor(duration / 3600);
+                                                                const minute = Math.floor((duration / 60) % 60);
+                                                                const second = Math.floor(duration % 60);
+                                                                const viewstr = hour + ':' + String(minute).padStart(2, '0') + ':' + String(second).padStart(2, '0');
+                                                            %>
+                                                            <span class="tag" style="background-color: #F68B30;">
+                                                                <i class="fa-solid fa-microphone" style="color: #ffffff;"></i>
+                                                            </span>
+                                                            <span class="tag">
+                                                                <%- viewstr %>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="control">
+                                                        <div class="tags has-addons">
+                                                            <span class="tag" style="background-color: #F68B30;">
+                                                                <i class="fa-solid fa-calendar" style="color: #ffffff;"></i>
+                                                            </span>
+                                                            <span class="tag">
+                                                                <%- date(post.date, theme.timeformat) %>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            <% } else { %>
+                                                <div class="tags has-addons">
+                                                    <span class="tag is-link">
+                                                        <i class="fa fa-calendar"></i>
+                                                    </span>
+                                                    <span class="tag">
+                                                        <%- date(post.date, theme.timeformat) %>
+                                                    </span>
+                                                </div>
+                                            <% } %>
+                                    </div>
+                                </div>
+                            </div>
+                        <!-- Post content or excerpt -->
+                        <section class="content has-text-weight-light is-size-6">
+                            <% if (post.excerpt) { %>
+                                <p><%- post.excerpt %></p>
                             <% } else { %>
-                                <%- __("read") %>
+                                <p><%- post.content %></p>
                             <% } %>
-                        </a>
-                    </footer>
+                        </section>
+                        </div>
+                        </div>
+                    <!--listen now button -->
+                            <footer class="card-footer">
+                                <a href="<%- url_for(post.path) %>" class="card-footer-item has-text-weight-medium is-uppercase" style="color: #F68B30;">
+                                    <% if (post.podcast && theme.podcast) { %>
+                                        <%- __("listen") %>
+                                    <% } else { %>
+                                        <%- __("read") %>
+                                    <% } %>
+                                </a>
+                            </footer>
+                    </div>
                 </div>
-
-
-
-            </div>
-        </div>
-<!--     </div> -->
 <% }); %>
 
 <!-- Page navigation -->
