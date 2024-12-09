@@ -41,71 +41,81 @@
                     <% } %>
                 </span>
             </p>
-            <p class="subtitle is-size-6">
-                <%- config.description %>
-                <% if (theme.navbar) { %> 
-                    <% if (theme.subnav) { %>
-                        <div class="container subnav-top">
-                    <% } else { %>
-                        <div class="container">
-                    <% } %>
-                        <div class="col-lg-4 subnav-bottom">
-                            <div class="col-lg-4 is-10-mobile is-offset-1-mobile is-one-third is-offset-one-third">
-                                <% for (let index in theme.navbar) { %>
-                                    <% 
-                                        const mapping = theme.navbar[index];
-                                        const link = mapping[0];
-                                        const favicon = mapping[1];
-                                        const description = mapping[2];
-                                        let outter = link.startsWith("https://") ? true : false;
-                                    %>
-                                    <% if (outter) { %>
-                                        <a href="<%= link %>" target="_blank" rel="noopener noreferrer">
-                                    <% } else { %>  
-                                        <a href="<%= link %>">
-                                    <% } %>
-                                        <span class="icon-text">
-                                            <span class="icon">
-                                                <i class="<%= favicon %>" style="color: #F68B30;"></i>
-                                            </span>
-                                            <span><%= description %></span>
-                                        </span>
-                                    </a>
-                                <% } %>
-                            </div>
-                        </div>
-                    </div>
-                <% } %>
+            <p class="subtitle is-size-6"><%- config.description %></p>
+            <% if (theme.navbar) { %>
                 <% if (theme.subnav) { %>
-                    <div class="container has-text-weight-medium is-size-7">
-                        <div class="col-lg-4 subnav-bottom">
-                            <div class="col-lg-4 is-10-mobile is-offset-1-mobile is-one-third is-offset-one-third" style="padding: 0%;">
-                                <% for (let index in theme.subnav) { %>
-                                    <% 
-                                        const mapping = theme.subnav[index];
-                                        const link = mapping[0];
-                                        const favicon = mapping[1];
-                                        const description = mapping[2];
-                                        let outter = link.startsWith("https://") ? true : false;
-                                    %>
-                                    <% if (outter) { %>
-                                        <a class="mr-2" href="<%= link %>" target="_blank" rel="noopener noreferrer">
-                                    <% } else { %>  
-                                        <a class="mr-2" href="<%= link %>">
-                                    <% } %>
-                                        <span class="icon-text">
-                                            <span class="icon">
-                                                <i class="<%= favicon %>" style="color: #F68B30;"></i>
-                                            </span>
-                                            <span style="color: #F68B30;"><%= description %></span>
-                                        </span>
-                                    </a>
+                    <div class="container subnav-top">
+                <% } else { %>
+                    <div class="container">
+                <% } %>
+                    <div class="col-lg-4 subnav-bottom">
+                        <div class="col-lg-4 is-10-mobile is-offset-1-mobile is-one-third is-offset-one-third">
+                            <% for (let index in theme.navbar) { %>
+                                <%
+                                    const mapping = theme.navbar[index];
+                                    const link = mapping[0];
+                                    const favicon = mapping[1];
+                                    const description = mapping[2];
+                                    let outter = link.startsWith("https://") ? true : false;
+                                %>
+                                <% if (outter) { %>
+                                    <a href="<%= link %>" target="_blank" rel="noopener noreferrer">
+                                <% } else { %>
+                                    <a href="<%= link %>">
                                 <% } %>
-                            </div>
+                                    <span class="icon-text">
+                                        <span class="icon">
+                                            <i class="<%= favicon %>" style="color: #F68B30;"></i>
+                                        </span>
+                                        <span><%= description %></span>
+                                    </span>
+                                </a>
+                            <% } %>
                         </div>
                     </div>
-                <% } %>
-            </p>
+                </div>
+            <% } %>
+            <% if (theme.subnav) { %>
+                <div class="container has-text-weight-medium is-size-7">
+                    <div class="col-lg-4 subnav-bottom">
+                        <div class="col-lg-4 is-10-mobile is-offset-1-mobile is-one-third is-offset-one-third" style="padding: 0%;">
+                            <% for (let index in theme.subnav) { %>
+                                <%
+                                    const mapping = theme.subnav[index];
+                                    const link = mapping[0];
+                                    const favicon = mapping[1];
+                                    const description = mapping[2];
+                                    let outter = link.startsWith("https://") ? true : false;
+                                %>
+                                <% if (outter) { %>
+                                    <a class="mr-2" href="<%= link %>" target="_blank" rel="noopener noreferrer">
+                                <% } else { %>
+                                    <a class="mr-2" href="<%= link %>">
+                                <% } %>
+                                    <span class="icon-text">
+                                        <span class="icon">
+                                            <i class="<%= favicon %>" style="color: #F68B30;"></i>
+                                        </span>
+                                        <span style="color: #F68B30;"><%= description %></span>
+                                    </span>
+                                </a>
+                            <% } %>
+                        </div>
+                    </div>
+                </div>
+            <% } %>
+            <div class="container has-text-weight-medium is-size-7">
+                <div class="col-lg-4 subnav-bottom">
+                        <a href="https://www.buymeacoffee.com/serendipedia" target="_blank">
+                            <img src="https://ooo.0x0.ooo/2024/12/09/OLskiD.png" alt="Buy Me A Coffee" style="height: 36px;" ></a>
+                        <a href='https://ko-fi.com/D1D6176UJN' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi1.png?v=6' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
+                        <a href="https://afdian.com/a/serendipedia"><img height="36" style='border:0px;height:36px;' src="https://pic1.afdiancdn.com/static/img/welcome/button-sponsorme.png" alt=""></a>
+                </div>
+            </div>
         </div>
     </div>
 </section>
+<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+                    data-id="serendipedia" data-description="Support me on Buy me a coffee!"
+                    data-message="支持我们的创作❤️～"
+                    data-color="#d1d7b3" data-position="Right" data-x_margin="50" data-y_margin="50"></script>
