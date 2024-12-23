@@ -40,7 +40,7 @@ podcast:
 
 欢迎收听《Serendipedia | 维机游走》的第一期节目！临近假期，第一期我们从关于圣诞树的宗教起源讲起，介绍了[波士顿官方圣诞树](https://en.wikipedia.org/wiki/Boston_Christmas_Tree)的渊源和现状，还提到了古今中外的类似习俗以及花生漫画是如何对抗消费主义对节日的渗透的。希望大家在来之不易的假期不用被消费主义绑架，节日快乐！🎄
 
-欢迎大家点赞、收藏，分享给自己的朋友和家人，也欢迎在评论区留言感兴趣的话题和无用知识！更欢迎打赏支持我们的创作（[爱发电](https://afdian.com/a/serendipedia)，(https://buymeacoffee.com/serendipedia)，[kofi](https://ko-fi.com/D1D6176UJN)）😝😝😝
+欢迎大家点赞、收藏，分享给自己的朋友和家人，也欢迎在评论区留言感兴趣的话题和无用知识！更欢迎打赏支持我们的创作（[爱发电](https://afdian.com/a/serendipedia)，[kofi](https://ko-fi.com/D1D6176UJN)）😝😝😝
 
 **时间节点**
 {% timeline %}
