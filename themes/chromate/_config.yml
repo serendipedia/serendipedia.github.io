@@ -72,7 +72,7 @@ highlight:
 navbar:
   - ['/feed.rss', 'fa-solid fa-rss', '']
   - ['https://www.instagram.com/serendipedia_podcast/', 'fa-brands fa-instagram', '']
-  - ['https://www.xiaohongshu.com/user/profile/64e40fef000000000100d998', "fa-solid fa-book", '']
+  - ['https://www.xiaohongshu.com/user/profile/66a7d067000000001d022e42', "fa-solid fa-book", '']
   - ['https://alive.bar/@serendipedia', "fa-brands fa-mastodon", '' ]
   - ['mailto:serendipedia2024@gmail.com', 'fa-solid fa-envelope', '']
 
