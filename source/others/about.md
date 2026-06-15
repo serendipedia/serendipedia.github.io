@@ -9,11 +9,11 @@ date: 2024-12-05 14:53:44
 ### ❓为什么要做这个播客
 两个主播平常都经常光顾维基百科，在上面发现了很多有趣的好玩的知识，让平淡的生活多了一些色彩，希望可以把这种快乐也分享给大家～
 
-同时两个主播目前因为一些不可抗力被迫异地，也想借一起做这个播客的机会 spend some quality time together🙏
+同时两个主播也想借一起做这个播客的机会 spend some quality time together🙏
 
 ### 🎙️主播介绍
 #### 🧙🏻‍♀️主播一号：阿不思
-Permanent Head Damage. 资深哈迷一枚，坐标新英格兰。日常喜欢搞七搞八，爱好过于广泛，没有一样精通。好奇心强烈，喜欢收集、学习各种各样的无用知识。
+Permanent Head Damage. 资深哈迷一枚。日常喜欢搞七搞八，爱好过于广泛，没有一样精通。好奇心强烈，喜欢收集、学习各种各样的无用知识。
 
 **哪里可以捕捉主播一号**
 - [个人博客](https://pensieve.wangxindi.org)
@@ -24,10 +24,11 @@ Permanent Head Damage. 资深哈迷一枚，坐标新英格兰。日常喜欢搞
 - [哔哩哔哩](https://space.bilibili.com/221488100)
 - [Instagram](https://www.instagram.com/albus_dumbledore_1993/)
 - 另一档播客：[《女巫茶话会》](https://covencoffeehour.github.io)
+- 另一档播客：[《黄油啤酒吧》](https://butterbeerbar2025.github.io)
 
 
 #### 🧑🏻‍🌾主播二号：路比
-Also Permanent Head Damage. 枫叶国流浪中。喜欢漫无目的地瞎逛瞎拍。希望可以念一个无用知识学位。
+Also Permanent Head Damage. 喜欢漫无目的地瞎逛瞎拍。希望可以念一个无用知识学位。
 
 **哪里可以捕捉主播二号**
 - [长毛象](https://alive.bar/@rholais)

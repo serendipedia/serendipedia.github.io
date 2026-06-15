@@ -75,6 +75,8 @@ navbar:
   - ['https://www.xiaohongshu.com/user/profile/66a7d067000000001d022e42', "fa-solid fa-book", '']
   - ['https://alive.bar/@serendipedia', "fa-brands fa-mastodon", '' ]
   - ['mailto:serendipedia2024@gmail.com', 'fa-solid fa-envelope', '']
+  - ['https://douchi.space/@albusdumbledore', 'fa-solid fa-user-pen', '' ]
+  - ['https://alive.bar/@rholais', 'fa-solid fa-user-shield', '' ]
 
 # Subnav configuration will show below navbar with a horizontal divider
 # Configuration format as same as previous
